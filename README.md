@@ -1,28 +1,26 @@
-# CodeForGood Front-End Website
+# CodeForGood Website
 
-This repository contains the front-end code for the CodeForGood website, which is built using Next.js.
+This is a personal project for a website that aims to promote coding for social good and inspire developers to create meaningful projects that benefit society. The website is developed using Next.js, a popular open-source framework for building React applications. You can preview it at https://code-for-good-one.vercel.app/.
+
+## Features
+
+- Home page with an overview of the website and its purpose
+- Privacy Policy and Terms of Service page
+- More pages coming soon... maybe
 
 ## Getting Started
 
-1. Clone the repository.
-2. Run `npm install` to install the required dependencies.
-3. Run `npm run dev` to start the development server.
-4. Open [http://localhost:3000](http://localhost:3000) to view the website in your browser.
+To run this website on your local machine, you will need to have Node.js installed. Once you have Node.js installed, you can clone this repository and run the following commands:
 
-## Contributing
+- npm install
+- npm run dev
 
-We welcome contributions to our project. To contribute, please follow these steps:
+This will start a development server and you can view the website at http://localhost:3000.
 
-1. Fork the repository.
-2. Create a new branch.
-3. Make your changes.
-4. Test your changes.
-5. Submit a pull request.
+## Contributions
 
-## Issues
-
-If you encounter any issues with the website, please submit an issue in our [issue tracker](https://github.com/CodeForGood/website/issues) with as much detail as possible, including steps to reproduce the issue.
+As this is a personal project, contributions are not accepted at this time. However, if you have any feedback or suggestions for the website, please feel free to contact me through my email address.
 
 ## License
 
-This project is licensed under the MIT License.
+This website is not licensed and is for personal use only.
