@@ -17,7 +17,7 @@ function Footer() {
         <section className={styles.content}>
           <section className={styles.logoHolder}>
             <Image
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="CFG logo"
               width={192}
               height={49.69}

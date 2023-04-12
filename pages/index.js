@@ -25,7 +25,7 @@ export default function Home() {
         <title>Code For Good</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Site Description." />
-        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:image" content="/images/logo.webp" />
         <meta name="theme-color" content="#000000" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
@@ -144,7 +144,7 @@ export default function Home() {
                   return (
                     <section className={styles.logoHolder} id={i}>
                       <Image
-                        src={`/images/sponsors/${sponsor.name}.png`}
+                        src={`/images/sponsors/${sponsor.name}.webp`}
                         alt={sponsor.name}
                         width={sponsor.width}
                         height={sponsor.height}
@@ -163,7 +163,7 @@ export default function Home() {
                   return (
                     <section className={styles.logoHolder} id={i}>
                       <Image
-                        src={`/images/sponsors/${sponsor.name}.png`}
+                        src={`/images/sponsors/${sponsor.name}.webp`}
                         alt={sponsor.name}
                         width={sponsor.width}
                         height={sponsor.height}
@@ -196,8 +196,8 @@ export default function Home() {
                       <Image
                         src={`/images/numbers/no${i + 1}.png`}
                         alt={`no${i + 1}`}
-                        width={153.56}
-                        height={197.61}
+                        width={213}
+                        height={274}
                         layout="responsive"
                         objectFit="contain"
                       />

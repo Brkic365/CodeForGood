@@ -151,7 +151,7 @@
         rgba(56, 29, 159, 0.8) 0%,
         rgba(160, 85, 161, 0.8) 100%
       ),
-      url("../public/images/crowd_blurred.png");
+      url("../public/images/crowd_blurred.webp");
 
     background-size: cover;
 
@@ -270,7 +270,7 @@
       margin-top: 2rem;
       .image1,
       .image2 {
-        background-image: url("../public/images/conference.jpg");
+        background-image: url("../public/images/conference.webp");
         background-size: cover;
         border-radius: 34px;
         width: 100%;
@@ -279,7 +279,7 @@
 
       .image2 {
         margin-top: 1rem;
-        background-image: url("../public/images/conference-2.jpg");
+        background-image: url("../public/images/conference-2.webp");
         height: 15rem;
       }
     }
@@ -412,7 +412,7 @@
           margin: 0 1.5rem;
 
           .logoHolder {
-            max-width: 16.875rem;
+            max-width: 17rem;
           }
         }
       }

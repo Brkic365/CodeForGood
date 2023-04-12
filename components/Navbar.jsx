@@ -125,7 +125,7 @@ function Navbar() {
 
       <section className={styles.logoHolder} onClick={() => router.push("/")}>
         <Image
-          src="/images/logo.png"
+          src="/images/logo.webp"
           alt="Polyminds logo"
           width={74}
           height={19.15}

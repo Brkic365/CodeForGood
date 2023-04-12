@@ -15,7 +15,7 @@ function Speaker({ speaker }) {
       <section
         className={styles.imgContainer}
         style={{
-          backgroundImage: `url(${process.env.DEV_URL}/images/speakers/${speaker.img}.png)`,
+          backgroundImage: `url(${process.env.DEV_URL}/images/speakers/${speaker.img}.webp)`,
         }}
       />
       <p>{speaker.name}</p>

@@ -10,7 +10,7 @@ function PrivacyPolicy() {
         <title>Privacy Policy | Code For Good</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Site Description." />
-        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:image" content="/images/logo.webp" />
         <meta name="theme-color" content="#000000" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
