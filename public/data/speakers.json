@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Elon Musk",
+    "img": "elon",
+    "social": {
+      "fb": "https://www.facebook.com/",
+      "ig": "https://www.instagram.com/",
+      "twitter": "https://twitter.com/elonmusk?fbclid=IwAR3sSJkLwo9p-Xo4onADTJJQ2gRJd1VOXNprNmor9CCO-da8Y776T4Y8mP8",
+      "in": "https://www.linkedin.com/feed/"
+    }
+  },
+  {
+    "name": "Bill Gates",
+    "img": "bill",
+    "social": {
+      "fb": "https://www.facebook.com/BillGates",
+      "ig": "https://www.instagram.com/thisisbillgates/",
+      "twitter": "https://twitter.com/BillGates",
+      "in": "https://www.linkedin.com/in/williamhgates/"
+    }
+  },
+  {
+    "name": "Warren Buffet",
+    "img": "warren",
+    "social": {
+      "fb": "https://www.facebook.com/",
+      "ig": "https://www.instagram.com/",
+      "twitter": "https://twitter.com/home",
+      "in": "https://www.linkedin.com/feed/"
+    }
+  },
+  {
+    "name": "Jacob Rothschild",
+    "img": "rothschild",
+    "social": {
+      "fb": "https://www.facebook.com/",
+      "ig": "https://www.instagram.com/",
+      "twitter": "https://twitter.com/home",
+      "in": "https://www.linkedin.com/feed/"
+    }
+  },
+  {
+    "name": "Mark Zuckerberg",
+    "img": "zuck",
+    "social": {
+      "fb": "https://www.facebook.com/zuck",
+      "ig": "https://www.instagram.com/zuck/",
+      "twitter": "https://twitter.com/home",
+      "in": "https://www.linkedin.com/feed/"
+    }
+  },
+  {
+    "name": "Tim Cook",
+    "img": "cook",
+    "social": {
+      "fb": "https://www.facebook.com/",
+      "ig": "https://www.instagram.com/",
+      "twitter": "https://twitter.com/tim_cook",
+      "in": "https://www.linkedin.com/feed/"
+    }
+  },
+  {
+    "name": "Jeff Bezos",
+    "img": "bezos",
+    "social": {
+      "fb": "https://www.facebook.com/",
+      "ig": "https://www.instagram.com/jeffbezos/",
+      "twitter": "https://twitter.com/JeffBezos",
+      "in": "https://www.linkedin.com/feed/"
+    }
+  },
+  {
+    "name": "Changpeng Zhao",
+    "img": "zhao",
+    "social": {
+      "fb": "https://www.facebook.com/",
+      "ig": "https://www.instagram.com/changpengzhao/",
+      "twitter": "https://twitter.com/cz_binance",
+      "in": "https://www.linkedin.com/in/cpzhao/"
+    }
+  }
+]

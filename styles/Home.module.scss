@@ -1,0 +1,1228 @@
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes puff-in-center {
+  0% {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-filter: blur(4px);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+    transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-16.5rem);
+    transform: translateX(-16.5rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-16.5rem);
+    transform: translateX(-16.5rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main {
+  .text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    span {
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 18px;
+      text-align: center;
+      color: #ff2383;
+      margin-bottom: -0.2rem;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 39px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      line-height: 29px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    p {
+      margin-top: 0.4rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    padding: 8rem 2rem;
+    background-image: linear-gradient(
+        90deg,
+        rgba(56, 29, 159, 0.8) 0%,
+        rgba(160, 85, 161, 0.8) 100%
+      ),
+      url("../public/images/crowd_blurred.png");
+
+    background-size: cover;
+
+    .text {
+      span {
+        -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s
+          both;
+        animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.5s both;
+      }
+
+      h1 {
+        -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.25s
+          both;
+        animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1.25s both;
+      }
+
+      p {
+        -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s
+          both;
+        animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2s both;
+      }
+
+      .buttons {
+        -webkit-animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2.75s
+          both;
+        animation: fade-in 1s cubic-bezier(0.39, 0.575, 0.565, 1) 2.75s both;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        place-content: space-between;
+        width: 20rem;
+
+        button {
+          z-index: 2;
+          cursor: pointer;
+          background: linear-gradient(90deg, #ff2383 0%, #ff07e6 100%);
+          border-radius: 50px;
+          border: none;
+          padding: 0.5rem 1rem;
+
+          display: flex;
+          align-items: center;
+
+          font-weight: 600;
+          font-size: 0.8rem;
+          line-height: 15px;
+          color: white;
+
+          -webkit-animation: flip-in-hor-bottom 0.5s
+            cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+          animation: flip-in-hor-bottom 0.5s
+            cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+
+          transition: all 0.25s ease-in-out;
+
+          &:hover {
+            transform: scale(1.05) !important;
+          }
+
+          &:active {
+            transform: scale(0.95) !important;
+          }
+
+          svg {
+            margin-left: 0.4rem;
+            width: 1.3rem;
+            height: 1.3rem;
+          }
+        }
+
+        .watchTrailer {
+          z-index: 1;
+          background: transparent;
+
+          -webkit-animation: slide-in-left 0.5s
+            cubic-bezier(0.25, 0.46, 0.45, 0.94) 3.5s both;
+          animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+            3.5s both;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .heroContent {
+      .circle {
+        -webkit-animation: puff-in-center 0.7s
+          cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s both;
+        animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 2.5s
+          both;
+        background: linear-gradient(180deg, #ff2383 0%, #ff07e6 100%);
+        width: 30rem;
+        height: 30rem;
+        border-radius: 50%;
+        margin-top: 7rem;
+        margin-bottom: -14rem;
+      }
+    }
+  }
+
+  .about {
+    position: relative;
+    background-color: white;
+    padding: 2rem;
+
+    .text {
+      h2,
+      p {
+        color: #3f3b3b;
+      }
+    }
+
+    .aboutContent {
+      margin-top: 2rem;
+      .image1,
+      .image2 {
+        background-image: url("../public/images/conference.jpg");
+        background-size: cover;
+        border-radius: 34px;
+        width: 100%;
+        height: 21rem;
+      }
+
+      .image2 {
+        margin-top: 1rem;
+        background-image: url("../public/images/conference-2.jpg");
+        height: 15rem;
+      }
+    }
+  }
+
+  .speakers {
+    padding: 2rem;
+    .speakersGrid {
+      margin-top: 2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+
+  .tickets {
+    margin-top: 10rem;
+    padding: 2rem;
+    padding-bottom: 8rem;
+
+    .ticketsGrid {
+      margin-top: 2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+
+  .sponsors {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 2rem;
+    padding-bottom: 5rem;
+    background-color: white;
+
+    .text {
+      h2,
+      p {
+        color: #3f3b3b;
+      }
+    }
+
+    .sponsorsGrid {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+
+      .quad {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 0.5rem;
+
+        .logoHolder {
+          margin: 1rem 0;
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  .prizes {
+    padding: 2rem;
+
+    .prizesGrid {
+      margin-top: 2rem;
+      .prize {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        .imgHolder {
+          width: 8rem;
+        }
+
+        .info {
+          margin-top: 1rem;
+
+          h3 {
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 29px;
+            text-align: center;
+            color: #ffffff;
+          }
+
+          p {
+            margin-top: 0.5rem;
+            font-weight: 500;
+            font-size: 0.8rem;
+            line-height: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    padding: 5rem 0;
+  }
+
+  .newsletter {
+    padding: 2rem;
+    background-color: white;
+
+    .text {
+      h2,
+      p {
+        color: #3f3b3b;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .main {
+    .sponsors {
+      .sponsorsGrid {
+        .quad {
+          margin: 0 1.5rem;
+
+          .logoHolder {
+            max-width: 16.875rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .main {
+    .sponsors {
+      .sponsorsGrid {
+        .quad {
+          margin: 0 2.5rem;
+          .logoHolder {
+            margin: 1.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .main {
+    .sponsors {
+      .sponsorsGrid {
+        .quad {
+          margin: 0 3.5rem;
+          .logoHolder {
+            margin: 2.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .main {
+    .text {
+      span {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+      }
+
+      h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    .hero {
+      .text {
+        width: 85%;
+        .buttons {
+          width: 25rem;
+          button {
+            cursor: pointer;
+            font-size: 1rem;
+            svg {
+              margin-left: 1rem;
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+
+      .heroContent {
+        .circle {
+          width: 40rem;
+          height: 40rem;
+          margin-bottom: -20rem;
+        }
+      }
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 10rem;
+
+      .text {
+        width: 80%;
+        h2,
+        p {
+        }
+      }
+
+      .aboutContent {
+        position: relative;
+        width: 80%;
+        .image1,
+        .image2 {
+          width: 70%;
+        }
+
+        .image2 {
+          position: absolute;
+          width: 60%;
+          bottom: -8rem;
+          right: 0;
+        }
+      }
+    }
+
+    .speakers {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .text {
+        width: 80%;
+      }
+
+      .speakersGrid {
+        gap: 2.5rem;
+      }
+    }
+
+    .tickets {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .text {
+        width: 80%;
+      }
+    }
+
+    .sponsors {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .text {
+        width: 80%;
+      }
+
+      .sponsorsGrid {
+        .quad {
+          margin: 0 5rem;
+          .logoHolder {
+            margin: 3rem 0;
+          }
+        }
+      }
+    }
+
+    .prizes {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .text {
+        width: 80%;
+      }
+
+      .prizesGrid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .prize {
+          width: 70%;
+          .info {
+            h3 {
+              font-size: 1.7rem;
+            }
+
+            p {
+              font-size: 1.1rem;
+              line-height: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .main {
+    .prizes {
+      .prizesGrid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .prize {
+          margin-top: 2rem;
+          flex-direction: row;
+          width: 95%;
+
+          .imgHolder {
+            width: 20%;
+          }
+
+          .info {
+            margin-left: 1rem;
+            width: 80%;
+            h3 {
+              text-align: left;
+              font-size: 1.7rem;
+            }
+
+            p {
+              text-align: left;
+              font-size: 1.1rem;
+              line-height: 1.6rem;
+            }
+          }
+        }
+
+        .prize:nth-child(even) {
+          flex-direction: row-reverse;
+
+          .info {
+            margin-left: 0;
+            margin-right: 1rem;
+            h3,
+            p {
+              text-align: right;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .main {
+    .text {
+      span {
+        font-size: 1.2rem;
+      }
+
+      h1 {
+        font-size: 3.75rem;
+        line-height: 4.5rem;
+      }
+
+      h2 {
+        font-size: 2.75rem;
+        line-height: 3.5rem;
+      }
+
+      p {
+        font-size: 1.05rem;
+        margin-top: 1rem;
+      }
+    }
+
+    .hero {
+      .text {
+        .buttons {
+          margin-top: 2rem;
+          width: 30rem;
+          button {
+            cursor: pointer;
+            padding: 0.75rem 1rem;
+            font-size: 1.1rem;
+            svg {
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+
+      .heroContent {
+        .circle {
+          width: 50rem;
+          height: 50rem;
+          margin-bottom: -25rem;
+        }
+      }
+    }
+
+    .about {
+      padding-bottom: 12rem;
+    }
+
+    .speakers {
+      .speakersGrid {
+        gap: 5rem;
+      }
+    }
+
+    .tickets {
+      .ticketsGrid {
+        gap: 5rem;
+      }
+    }
+
+    .sponsors {
+      .sponsorsGrid {
+        flex-direction: column;
+        .quad {
+          margin: 2rem 0;
+          flex-direction: row;
+          .logoHolder {
+            margin: 0 3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .main {
+    .hero {
+      padding-top: 14rem;
+      .text {
+        .buttons {
+          margin-top: 2rem;
+          width: 30rem;
+          button {
+            cursor: pointer;
+            padding: 0.75rem 1rem;
+            font-size: 1.1rem;
+            svg {
+              margin-left: 2rem;
+            }
+          }
+        }
+      }
+
+      .heroContent {
+        .circle {
+          margin-top: 13rem;
+        }
+      }
+    }
+
+    .about {
+      padding: 4rem;
+      padding-bottom: 16rem;
+
+      .text {
+        margin-bottom: 5rem;
+      }
+    }
+
+    .speakers,
+    .tickets,
+    .sponsors,
+    .prizes,
+    .contact,
+    .newsletter {
+      padding: 4rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .main {
+    .prizes {
+      .prizesGrid {
+        .prize {
+          width: 80%;
+          .imgHolder {
+            width: 15%;
+          }
+
+          .info {
+            margin-left: 5rem;
+            width: 85%;
+            h3 {
+              font-size: 2rem;
+              margin-bottom: 2rem;
+            }
+
+            p {
+            }
+          }
+        }
+
+        .prize:nth-child(even) {
+          .info {
+            margin-right: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .main {
+    .hero {
+      .text {
+        width: 70%;
+        .buttons {
+          button {
+            cursor: pointer;
+            padding: 1rem 1.5rem;
+            svg {
+              margin-left: 1rem;
+            }
+          }
+        }
+      }
+
+      .heroContent {
+        .circle {
+          margin-top: 15rem;
+          width: 65rem;
+          height: 65rem;
+          margin-bottom: -30rem;
+        }
+      }
+    }
+
+    .about {
+      padding: 5rem;
+      padding-bottom: 20rem;
+      .text {
+        width: 50%;
+        h2,
+        p {
+        }
+      }
+
+      .aboutContent {
+        .image1,
+        .image2 {
+          width: 60%;
+          height: 30rem;
+        }
+
+        .image2 {
+          margin-bottom: -5rem;
+          width: 50%;
+        }
+      }
+    }
+
+    .speakers {
+      padding: 5rem;
+      .speakersGrid {
+        gap: 7rem;
+      }
+    }
+
+    .tickets {
+      padding: 5rem;
+      .ticketsGrid {
+        gap: 4rem;
+      }
+    }
+
+    .sponsors {
+      padding: 5rem;
+      .text {
+        width: 60%;
+      }
+
+      .sponsorsGrid {
+        .quad {
+          margin: 5rem 0;
+          .logoHolder {
+            margin: 0 4rem;
+          }
+        }
+      }
+    }
+
+    .prizes {
+      padding: 5rem;
+
+      .text {
+        width: 50%;
+      }
+
+      .prizesGrid {
+        .prize {
+          width: 70%;
+          margin: 4rem 0;
+        }
+      }
+    }
+
+    .contact {
+      padding: 5rem;
+    }
+
+    .newsletter {
+      padding: 5rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .main {
+    .text {
+      span {
+        font-size: 1.35rem;
+      }
+
+      h1 {
+        font-size: 4.5rem;
+        line-height: 5.25rem;
+      }
+
+      h2 {
+        font-size: 3.5rem;
+        line-height: 4.25rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+      }
+    }
+
+    .hero {
+      flex-direction: row;
+      place-content: space-between;
+      padding: 7rem 10% 11rem 10%;
+
+      .text {
+        align-items: start;
+        width: 60%;
+
+        h1,
+        p {
+          text-align: left;
+        }
+      }
+
+      .heroContent {
+        width: 40%;
+        .circle {
+          width: 50rem;
+          height: 50rem;
+          margin-left: 10rem;
+          margin-bottom: -20rem;
+        }
+      }
+    }
+
+    .about {
+      flex-direction: row-reverse;
+      place-content: space-between;
+      align-items: start;
+      padding: 5rem 10%;
+      padding-bottom: 10rem;
+
+      .text {
+        align-items: start;
+        width: 70%;
+
+        h2,
+        p {
+          text-align: left;
+        }
+      }
+
+      .aboutContent {
+        margin-top: 0;
+        .image1,
+        .image2 {
+          width: 55%;
+          height: 24rem;
+        }
+
+        .image2 {
+          width: 50%;
+          height: 18rem;
+          left: 30%;
+          bottom: -2rem;
+        }
+      }
+    }
+
+    .speakers {
+      padding: 5rem 10%;
+
+      .text {
+        margin-right: auto;
+        align-items: start;
+        width: 50%;
+
+        h2,
+        p {
+          text-align: left;
+        }
+      }
+    }
+
+    .tickets {
+      padding: 5rem 5%;
+      .ticketsGrid {
+        margin-top: 4rem;
+      }
+    }
+
+    .sponsors {
+      padding: 5rem 10%;
+    }
+
+    .prizes {
+      padding: 5rem 10%;
+    }
+
+    .contact {
+      padding: 5rem 10%;
+    }
+
+    .newsletter {
+      padding: 5rem 10%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .text {
+        align-items: start;
+        width: 70%;
+
+        h2,
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .main {
+    .hero {
+      .text {
+        width: 47%;
+      }
+
+      .heroContent {
+        width: 53%;
+
+        .circle {
+          margin-left: 20rem;
+        }
+      }
+    }
+
+    .speakers {
+      .speakersGrid {
+        gap: 10rem;
+      }
+    }
+
+    .tickets {
+    }
+
+    .prizes {
+      .prizesGrid {
+        .prize {
+          margin: 2rem 0;
+          .imgHolder {
+            width: 20%;
+          }
+
+          .info {
+            h3 {
+              font-size: 2.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      padding: 5rem 10%;
+    }
+
+    .newsletter {
+      padding: 5rem 10%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      .text {
+        align-items: start;
+        width: 70%;
+
+        h2,
+        p {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .main {
+    .text {
+      span {
+      }
+
+      h1 {
+      }
+
+      h2 {
+      }
+
+      p {
+      }
+    }
+
+    .hero {
+      .text {
+        .buttons {
+          button {
+            cursor: pointer;
+            svg {
+            }
+          }
+
+          .watchTrailer {
+          }
+        }
+      }
+
+      .heroContent {
+        .circle {
+        }
+      }
+    }
+
+    .about {
+      .text {
+        h2,
+        p {
+        }
+      }
+
+      .aboutContent {
+        .image1,
+        .image2 {
+        }
+
+        .image2 {
+        }
+      }
+    }
+
+    .speakers {
+      .speakersGrid {
+      }
+    }
+
+    .tickets {
+      .ticketsGrid {
+      }
+    }
+
+    .sponsors {
+      .text {
+        h2,
+        p {
+        }
+      }
+
+      .sponsorsGrid {
+        .quad {
+          .logoHolder {
+          }
+        }
+      }
+    }
+
+    .prizes {
+      .prizesGrid {
+        .prize {
+          .imgHolder {
+          }
+
+          .info {
+            h3 {
+            }
+
+            p {
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+    }
+
+    .newsletter {
+      .text {
+        h2,
+        p {
+        }
+      }
+    }
+  }
+}

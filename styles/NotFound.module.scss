@@ -1,0 +1,149 @@
+.main {
+  padding-top: 4rem;
+  .notFound {
+    background-color: white;
+    padding: 1rem;
+    color: #3f3b3b;
+
+    .graphic {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 3rem 0;
+
+      .plugsImg {
+        position: absolute;
+        background-image: url("../public/images/plugs.png");
+        background-size: cover;
+        width: 100vw;
+        height: calc(100vw * 0.245);
+        left: -5%;
+        top: 15%;
+      }
+
+      .circle {
+        background: linear-gradient(180deg, #ff2383 0%, #ff07e6 100%);
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+      }
+
+      .fours {
+        h1 {
+          position: absolute;
+          font-size: 35vw;
+          left: 2%;
+          top: 50%;
+          transform: translateY(-50%);
+
+          opacity: 8%;
+        }
+
+        h1:nth-child(2) {
+          left: 85%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .info {
+      margin: 4rem auto;
+      width: 70%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin-bottom: 0.25rem;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 17px;
+        text-align: center;
+      }
+
+      button {
+        cursor: pointer;
+        background: linear-gradient(90deg, #ff2383 0%, #ff07e6 100%);
+        border-radius: 50px;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        margin-top: 1rem;
+
+        display: flex;
+        align-items: center;
+
+        font-weight: 600;
+        font-size: 0.8rem;
+        line-height: 15px;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .main {
+    padding-top: 5.5rem;
+    .notFound {
+      .graphic {
+        .plugsImg {
+          left: -2%;
+        }
+      }
+
+      .info {
+        h2 {
+          font-size: 3rem;
+          line-height: 4rem;
+        }
+
+        p {
+          margin: 0.5rem 0;
+          font-size: 1.2rem;
+          line-height: 1.7rem;
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 1rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .main {
+    padding-top: 4.5rem;
+    .notFound {
+      padding-top: 6rem;
+
+      .info {
+        margin-top: 9rem;
+        h2 {
+          font-size: 3.5rem;
+          line-height: 4.5rem;
+        }
+
+        p {
+          margin: 0.75rem 0;
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+        }
+
+        button {
+          font-size: 1.1rem;
+          padding: 1.2rem 2.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "zoom",
+    "width": 171,
+    "height": 53
+  },
+  {
+    "name": "google",
+    "width": 153,
+    "height": 52
+  },
+  {
+    "name": "uber",
+    "width": 121,
+    "height": 43
+  },
+  {
+    "name": "polyminds",
+    "width": 251.75,
+    "height": 53
+  },
+  {
+    "name": "binance",
+    "width": 269,
+    "height": 53
+  },
+  {
+    "name": "spotify",
+    "width": 177,
+    "height": 53
+  },
+  {
+    "name": "youtube",
+    "width": 248,
+    "height": 53
+  },
+  {
+    "name": "amazon",
+    "width": 177,
+    "height": 54
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Student",
+    "price": 40,
+    "features": 5,
+    "color": "#FF2383"
+  },
+  {
+    "name": "Standard",
+    "price": 150,
+    "features": 5,
+    "color": "#FF07E6"
+  },
+  {
+    "name": "VIP",
+    "price": 280,
+    "features": 10,
+    "color": "#D7B500"
+  }
+]

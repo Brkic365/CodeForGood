@@ -1,0 +1,172 @@
+.ticket {
+  border: 2px solid;
+  border-radius: 32px;
+
+  .headline {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px dashed;
+    text-align: center;
+
+    h4 {
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 1rem;
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 28px;
+      color: #ffffff;
+    }
+  }
+
+  .features {
+    padding: 1rem;
+
+    .feature {
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+
+      .check {
+        width: 2rem;
+        height: 2rem;
+        padding-bottom: 0;
+        border-radius: 50%;
+        position: relative;
+
+        svg {
+          position: absolute;
+          width: 1.4rem;
+          height: 1.4rem;
+          color: white;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      p {
+        width: 80%;
+        text-align: left;
+        margin-left: 1rem;
+        font-weight: 400;
+        font-size: 0.81rem;
+        line-height: 16px;
+        color: #ffffff;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0.5rem 2rem;
+      margin: 0 auto;
+      margin-top: 2rem;
+      border-radius: 50px;
+
+      border: none;
+      display: flex;
+      align-items: center;
+
+      font-weight: 600;
+      font-size: 0.81rem;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
+
+@media only screen and (min-width: 470px) {
+  .ticket {
+    width: 85%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .ticket {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .ticket {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .ticket {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .ticket {
+    border: 3px solid;
+
+    .headline {
+      padding: 1.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 3px dashed;
+
+      h4 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      h1 {
+        margin-top: 1rem;
+        font-size: 5rem;
+        line-height: normal;
+      }
+    }
+
+    .features {
+      padding: 2rem;
+
+      .feature {
+        margin-bottom: 1.5rem;
+
+        .check {
+          svg {
+            width: 1.6rem;
+            height: 1.6rem;
+          }
+        }
+
+        p {
+          width: 80%;
+          margin-left: 1.5rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        padding: 0.75rem 3rem;
+        margin-top: 3rem;
+
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .ticket {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1650px) {
+  .ticket {
+    width: 30%;
+  }
+}

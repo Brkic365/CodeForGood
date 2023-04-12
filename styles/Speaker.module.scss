@@ -1,0 +1,77 @@
+.speaker {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  .imgContainer {
+    background-size: cover;
+    width: 8.75rem;
+    height: 11.3rem;
+  }
+
+  p {
+    margin: 1rem 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 20px;
+    color: #ffffff;
+  }
+
+  .social {
+    svg {
+      margin: 0 0.5rem;
+      opacity: 0.7;
+      width: 1.2rem;
+      height: 1.2rem;
+      transition: 0.25s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.15);
+        opacity: 1;
+      }
+
+      &:focus {
+        transform: scale(0.9);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .speaker {
+    .imgContainer {
+      background-size: cover;
+      width: 12rem;
+      height: 15.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.7rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .speaker {
+    .imgContainer {
+      background-size: cover;
+      width: 15rem;
+      height: 19.3rem;
+    }
+
+    p {
+      margin: 1.5rem 0;
+      font-size: 1.4rem;
+      line-height: 1.9rem;
+    }
+
+    .social svg {
+      width: 1.6rem;
+      height: 1.6rem;
+      margin: 0 1rem;
+    }
+  }
+}

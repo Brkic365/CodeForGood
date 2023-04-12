@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .footer {
+    padding: 1rem;
+    color: #f6e7e5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .logoHolder {
+        width: 8rem;
+        margin: 2rem 0;
+      }
+
+      .categories {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: space-between;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+
+        .category {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-top: 2rem;
+          h5 {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          }
+
+          a {
+            font-size: 0.8rem;
+          }
+
+          ul {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            list-style-type: none;
+
+            li {
+              opacity: 0.6;
+              display: flex;
+              align-items: center;
+              margin: 0.5rem 0;
+              transition: 0.2s ease-in-out;
+
+              svg {
+                margin-right: 0.5rem;
+              }
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    p {
+      text-align: center;
+      border-top: 1px solid rgb(121, 121, 126, 0.38);
+      font-size: 0.6rem;
+      width: 100%;
+      padding-top: 0.5rem;
+      opacity: 0.7;
+    }
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .container .footer {
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .container .footer .content {
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .categories {
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      flex-direction: row;
+      place-content: space-between;
+      width: 90%;
+      align-items: flex-start;
+
+      .category {
+        align-items: flex-start;
+
+        ul {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .container .footer {
+    .content {
+      flex-direction: row;
+      place-content: space-between;
+
+      .logoHolder {
+        width: 15rem;
+      }
+
+      .categories {
+        width: 60%;
+
+        .category {
+          h5 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+          }
+
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      padding-top: 1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container .footer .content {
+    width: 65rem;
+  }
+}
