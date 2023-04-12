@@ -25,4 +25,4 @@ If you encounter any issues with the website, please submit an issue in our [iss
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
