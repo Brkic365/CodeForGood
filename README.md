@@ -1,6 +1,6 @@
 # CodeForGood Website
 
-This is a personal project for a website that aims to promote coding for social good and inspire developers to create meaningful projects that benefit society. The website is developed using Next.js, a popular open-source framework for building React applications. You can preview it at https://code-for-good-one.vercel.app/.
+This is a personal project for a website that aims to promote coding for social good and inspire developers to create meaningful projects that benefit society. The website is developed using Next.js, a popular open-source framework for building React applications. You can preview it at [codeforgood-hackathon.vercel.app](https://codeforgood-hackathon.vercel.app/).
 
 ## Features
 
