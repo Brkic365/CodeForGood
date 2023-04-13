@@ -37,8 +37,6 @@ function Navbar() {
   // State that handles if scroll is on start or not
   const [onStart, setOnStart] = useState(true);
 
-  console.log(scrollDir);
-
   const [links] = useState([
     {
       title: "About",

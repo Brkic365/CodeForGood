@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Head from "next/head";
 import styles from "@/styles/NotFound.module.scss";
 
@@ -29,12 +30,14 @@ function NotFound() {
         <section className={styles.info}>
           <h2>Page Not Found</h2>
           <p>Oops, the page you're looking for doesn't exist!</p>
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Go Home
-          </motion.button>
+          <Link href="/">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Go Home
+            </motion.button>
+          </Link>
         </section>
       </section>
     </main>

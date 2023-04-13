@@ -41,7 +41,7 @@ export default function Home() {
               and Win Cash Prizes up to $10,000!
             </p>
             <section className={styles.buttons}>
-              <Link href="\#tickets">
+              <Link href="/#tickets">
                 <button>
                   Get tickets
                   <HiArrowSmallRight />
@@ -99,7 +99,7 @@ export default function Home() {
           <section className={styles.speakersGrid}>
             <Fade cascade damping={0.4} triggerOnce delay={500}>
               {speakers.map((speaker, i) => {
-                return <Speaker speaker={speaker} id={i} />;
+                return <Speaker speaker={speaker} key={i} />;
               })}
             </Fade>
           </section>
@@ -121,7 +121,7 @@ export default function Home() {
           <Fade cascade damping={0.4} triggerOnce delay={500}>
             <section className={styles.ticketsGrid}>
               {tickets.map((ticket, i) => {
-                return <Ticket ticket={ticket} id={i} />;
+                return <Ticket ticket={ticket} key={i} />;
               })}
             </section>
           </Fade>
@@ -142,7 +142,7 @@ export default function Home() {
               <Fade cascade damping={0.4} triggerOnce delay={500}>
                 {sponsors.slice(0, 4).map((sponsor, i) => {
                   return (
-                    <section className={styles.logoHolder} id={i}>
+                    <section className={styles.logoHolder} key={i}>
                       <Image
                         src={`/images/sponsors/${sponsor.name}.webp`}
                         alt={sponsor.name}
@@ -161,7 +161,7 @@ export default function Home() {
               <Fade cascade damping={0.4} triggerOnce delay={1500}>
                 {sponsors.slice(4, 8).map((sponsor, i) => {
                   return (
-                    <section className={styles.logoHolder} id={i}>
+                    <section className={styles.logoHolder} key={i}>
                       <Image
                         src={`/images/sponsors/${sponsor.name}.webp`}
                         alt={sponsor.name}
@@ -191,8 +191,8 @@ export default function Home() {
             <section className={styles.prizesGrid}>
               {prizes.map((prize, i) => {
                 return (
-                  <section className={styles.prize} id={i}>
-                    <section className={styles.imgHolder} id={i}>
+                  <section className={styles.prize} key={i}>
+                    <section className={styles.imgHolder}>
                       <Image
                         src={`/images/numbers/no${i + 1}.png`}
                         alt={`no${i + 1}`}

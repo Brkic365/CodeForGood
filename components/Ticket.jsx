@@ -24,7 +24,7 @@ function Ticket({ ticket }) {
           let hasFeature = ticket.features > i;
 
           return (
-            <section className={styles.feature} id={i}>
+            <section className={styles.feature} key={i}>
               <section
                 className={styles.check}
                 style={{
